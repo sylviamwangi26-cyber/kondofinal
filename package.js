@@ -21,30 +21,82 @@ const packages = {
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ================= MODAL LOGIC ================= */
-    const modals = document.querySelectorAll('.modal');
+    const modal = document.getElementById('itinerary-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body-content');
     const openButtons = document.querySelectorAll('.btn-more');
-    const closeButtons = document.querySelectorAll('.close');
+    const closeButton = document.querySelector('.close');
 
-    // Open Modal
+    const itineraries = {
+        "modal-1": {
+            title: "Malindi Tour - Programma",
+            content: `
+                <div class="itinerary-day">
+                    <h3>🌊 Giorno 1 — Arrivo a Malindi</h3>
+                    <p>Incontro con la guida e trasferimento in hotel. Pomeriggio dedicato al relax o visita al Parco Marino.</p>
+                </div>
+                <div class="itinerary-day">
+                    <h3>🏛️ Giorno 2 — Cultura e Ritorno</h3>
+                    <p>Visita al Pilastro di Vasco da Gama e al mercato locale. Trasferimento finale.</p>
+                </div>
+            `
+        },
+        "modal-2": {
+            title: "Safari Blue - Programma",
+            content: `
+                <div class="itinerary-day">
+                    <h3>⛵ Giornata Intera — Avventura Marina</h3>
+                    <p>Partenza in barca tradizionale (dhow). Snorkeling nella barriera corallina. Pranzo a base di pesce su un'isola deserta.</p>
+                </div>
+            `
+        },
+        // Using a generic template for 3rd-9th as requested to keep it clean but functional
+        "default": (name) => ({
+            title: `${name} - Programma Completo`,
+            content: `
+                <div class="itinerary-day">
+                    <h3>🐘 Giorno 1 — Arrivo e Safari</h3>
+                    <p>Incontro con la guida e trasferimento in 4x4. Primo game drive nella savana.</p>
+                </div>
+                <div class="itinerary-day">
+                    <h3>🦁 Giorno 2-3 — Nel cuore della Wild</h3>
+                    <p>Safari intensivi all'alba e al tramonto. Avvistamento dei Big Five.</p>
+                </div>
+                <div class="itinerary-day">
+                    <h3>🌅 Giorno Finale — Rientro</h3>
+                    <p>Ultimo safari all'alba e trasferimento alla costa o in aeroporto.</p>
+                </div>
+            `
+        })
+    };
+
     openButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const modalId = btn.getAttribute('data-modal');
-            const modal = document.getElementById(modalId);
-            if (modal) modal.style.display = 'flex'; // Use flex to center with CSS
+            const pkgName = btn.closest('.package-card').querySelector('h3').textContent;
+            
+            const data = itineraries[modalId] || itineraries["default"](pkgName);
+            
+            modalTitle.textContent = data.title;
+            // For the demo/request, we keep the sections but update the days
+            const daysContainer = modal.querySelectorAll('.itinerary-day');
+            daysContainer.forEach(d => d.remove());
+            
+            modalTitle.insertAdjacentHTML('afterend', data.content);
+            
+            modal.style.display = 'flex';
         });
     });
 
-    // Close Modal (X button)
-    closeButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.closest('.modal').style.display = 'none';
+    if(closeButton) {
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
         });
-    });
+    }
 
-    // Close Modal (Click outside)
     window.addEventListener('click', (e) => {
-        if (e.target.classList.contains('modal')) {
-            e.target.style.display = 'none';
+        if (e.target === modal) {
+            modal.style.display = 'none';
         }
     });
 

@@ -12,6 +12,13 @@
    background-color: var(--grey);
    color: #333;
    scroll-behavior: smooth;
+   overflow-x: hidden;
+ }
+
+ /* Backgrounds */
+ .bg-elephant {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('elephant.jpg') no-repeat center center fixed;
+   background-size: cover;
  }
 
  /* --- STICKY CONTACT BUTTON --- */
@@ -201,9 +208,43 @@
    max-width: 1200px;
    margin: 40px auto;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
+   /* Default 3 columns */
    gap: 30px;
    padding: 20px;
+ }
+
+ @media (max-width: 1024px) {
+   .packages {
+     grid-template-columns: repeat(2, 1fr);
+     /* 2 columns for tablets */
+   }
+ }
+
+ @media (max-width: 600px) {
+   .packages {
+     grid-template-columns: 1fr;
+     /* 1 column for phones */
+   }
+ }
+
+ .explore-kenya-pad {
+   background: var(--white);
+   padding: 40px;
+   border-radius: 20px;
+   text-align: center;
+   margin: 100px auto 20px;
+   max-width: 800px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+   position: relative;
+   z-index: 10;
+ }
+
+ .explore-kenya-pad h1 {
+   margin: 0;
+   color: var(--orange);
+   text-transform: uppercase;
+   font-size: 3rem;
  }
 
  .package-card {
@@ -304,14 +345,91 @@
 
  .modal-content {
    background-color: #fff;
-   padding: 30px;
-   border-radius: 15px;
+   padding: 40px;
+   border-radius: 20px;
    width: 90%;
-   max-width: 500px;
+   max-width: 700px;
+   /* Wider for itinerary */
    position: relative;
-   max-height: 90vh;
+   max-height: 85vh;
    overflow-y: auto;
-   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+   border-top: 10px solid var(--orange);
+   /* Orange accent */
+ }
+
+ .itinerary-day {
+   margin-bottom: 25px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #eee;
+ }
+
+ .itinerary-day h3 {
+   color: var(--orange);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 1.4rem;
+   margin-bottom: 10px;
+ }
+
+ .itinerary-section {
+   margin-top: 30px;
+ }
+
+ .itinerary-section h4 {
+   background: var(--orange);
+   color: white;
+   padding: 10px 15px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+ }
+
+ .itinerary-list {
+   list-style: none;
+   padding: 0;
+ }
+
+ .itinerary-list li {
+   padding: 8px 0;
+   display: flex;
+   gap: 10px;
+   align-items: flex-start;
+ }
+
+ .itinerary-list li::before {
+   content: "✅";
+ }
+
+ .itinerary-list.not-included li::before {
+   content: "❌";
+ }
+
+ .itinerary-list.rules li::before {
+   content: "⚠️";
+ }
+
+ .btn-whatsapp {
+   background-color: #25d366;
+   color: white;
+   padding: 12px;
+   border: none;
+   border-radius: 5px;
+   font-weight: bold;
+   cursor: pointer;
+   width: 100%;
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   text-decoration: none;
+   transition: 0.3s;
+ }
+
+ .btn-whatsapp:hover {
+   background-color: #128c7e;
  }
 
  .close {
@@ -523,6 +641,60 @@
    font-weight: bold;
    color: var(--dark);
    display: block;
+ }
+
+ /* --- RATING FORM --- */
+ .rating-form-container {
+   margin-top: 50px;
+   background: #fdfdfd;
+   padding: 30px;
+   border-radius: 15px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+ }
+
+ .star-rating {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+   gap: 10px;
+   margin-bottom: 15px;
+ }
+
+ .star-rating input {
+   display: none;
+ }
+
+ .star-rating label {
+   font-size: 2rem;
+   color: #ddd;
+   cursor: pointer;
+   transition: 0.2s;
+ }
+
+ .star-rating input:checked~label,
+ .star-rating label:hover,
+ .star-rating label:hover~label {
+   color: var(--orange);
+ }
+
+ #ratingForm textarea,
+ #ratingForm input[type="text"] {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 15px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   font-family: inherit;
+ }
+
+ #ratingForm button {
+   width: auto;
+   padding: 12px 30px;
+   border-radius: 25px;
  }
 
  /* --- FOOTER --- */

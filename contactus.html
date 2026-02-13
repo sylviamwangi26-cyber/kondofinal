@@ -1,164 +1,170 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aiuto & Prenotazioni | Salame Safari Tours</title>
 
-    <!-- CSS FILE -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="logo.png" alt="Salame Safari Logo" class="brand-logo" />
-        </a>
-      </div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="package.html">Pacchetti</a>
-        <a href="services.html">Servizi</a>
-        <a href="gallery.html">Galleria</a>
-        <a href="#bookingform" class="btn-book-nav">PRENOTA ORA</a>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contattaci | Prenota il tuo Safari in Kenya | Salame Safari Tours</title>
+  <meta name="description"
+    content="Hai domande o vuoi prenotare un safari? Contattaci ora per un preventivo personalizzato. Siamo esperti in viaggi in Kenya e Africa dell'Est.">
+  <meta name="keywords"
+    content="Contatti Safari Kenya, Prenota Safari, Assistenza Viaggi Kenya, Salame Safari Contatti">
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <header class="page-hero">
-      <h1>Siamo qui per aiutarti</h1>
-      <p>Trova risposte rapide o prenota oggi stesso il tuo viaggio da sogno</p>
-    </header>
+<body class="bg-elephant">
+  <nav>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Salame Safari Logo" class="brand-logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="package.html">Pacchetti</a>
+      <a href="service.html">Servizi</a>
+      <a href="gallery.html">Galleria</a>
+      <a href="#bookingform" class="btn-book-nav">PRENOTA ORA</a>
+    </div>
+  </nav>
 
-    <div class="combined-section">
-      <div class="faq-card">
-        <h2>Domande Frequenti (FAQ)</h2>
-        <details class="help-item">
-          <summary>Come posso prenotare un safari?</summary>
-          <p>
-            Usa il modulo qui sotto, scrivici su WhatsApp o inviaci un'email. Ti
-            risponderemo entro 24 ore.
-          </p>
-        </details>
-        <details class="help-item">
-          <summary>Offrite safari personalizzati?</summary>
-          <p>
-            Certamente! Ogni viaggio può essere adattato ai tuoi desideri,
-            budget e interessi.
-          </p>
-        </details>
-        <details class="help-item">
-          <summary>Il Kenya è sicuro?</summary>
-          <p>
-            Sì, il Kenya è una meta turistica sicura e accogliente. Le nostre
-            guide esperte si prenderanno cura di te.
-          </p>
-        </details>
-      </div>
+  <header class="page-hero">
+    <h1>Siamo qui per aiutarti</h1>
+    <p>Trova risposte rapide o prenota oggi stesso il tuo viaggio da sogno</p>
+  </header>
 
-      <div class="booking-container" id="bookingform">
-        <div class="info-sidebar">
-          <h3>Contatti Rapidi</h3>
-          <p>Hai domande urgenti? Scrivici direttamente:</p>
-          <div class="contact-item">
-            <span>📍</span>
-            <div>watamu, Kenya</div>
-          </div>
-          <div class="contact-item">
-            <span>📞</span>
-            <div>+254114425712</div>
-          </div>
-          <div class="contact-item">
-            <span>📧</span>
-            <div>salamesafaritours@gmail.com</div>
-          </div>
-          <div class="contact-item">
-            <span>💬</span>
-            <div>WhatsApp: +393339915462</div>
-          </div>
-        </div>
-        !-- WhatsApp button -->
-  <a href="https://wa.me/393339915462" class="sticky-contact" target="_blank">
-    <span>💬</span> CONTATTACI ORA
-  </a>
-
-
-        <div class="form-section">
-          <h2>Inizia l'Avventura</h2>
-          <p style="color: #777;">Compila il modulo e ricevi un preventivo gratuito.</p>
-
-          <!-- Web3Forms Integration -->
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms Hidden Input -->
-            <input type="hidden" name="access_key" value="666c78f9-4021-45c1-8f64-11599e87a5aa" />
-            <input type="hidden" name="redirect" value="thankyou.html" />
-            <input type="hidden" name="subject" value="Nuova Richiesta Safari" />
-
-            <div class="form-grid">
-              <div class="input-group">
-                <label>Nome e Cognome</label>
-                <input type="text" name="name" placeholder="Mario Rossi" required />
-              </div>
-              <div class="input-group">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="mario@email.it" required />
-              </div>
-              <div class="input-group">
-                <label>Scegli il Pacchetto</label>
-                <select name="package" required>
-                  <option value="">Seleziona...</option>
-                  <option>2 Giorni Tsavo Est</option>
-                  <option>2 Giorni Masai Mara</option>
-                  <option>3 Giorni Tsavo Est & Ovest</option>
-                  <option>Escursione Malindi</option>
-                </select>
-              </div>
-              <div class="input-group">
-                <label>Data di Inizio</label>
-                <input type="date" name="date" required />
-              </div>
-              <div class="input-group">
-                <label>Persone</label>
-                <input type="number" name="people" min="1" value="2" />
-              </div>
-              <div class="input-group">
-                <label>Telefono</label>
-                <input type="tel" name="phone" placeholder="+39 ..." />
-              </div>
-              <div class="input-group full-width">
-                <label>Richieste Speciali</label>
-                <textarea name="message" rows="3" placeholder="Es. Dieta vegana, pick-up in hotel..."></textarea>
-              </div>
-              <div class="full-width">
-                <button type="submit" class="btn-submit">Invia Richiesta</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+  <div class="combined-section">
+    <div class="faq-card">
+      <h2>Domande Frequenti (FAQ)</h2>
+      <details class="help-item">
+        <summary>Come posso prenotare un safari?</summary>
+        <p>
+          Usa il modulo qui sotto, scrivici su WhatsApp o inviaci un'email. Ti
+          risponderemo entro 24 ore.
+        </p>
+      </details>
+      <details class="help-item">
+        <summary>Offrite safari personalizzati?</summary>
+        <p>
+          Certamente! Ogni viaggio può essere adattato ai tuoi desideri,
+          budget e interessi.
+        </p>
+      </details>
+      <details class="help-item">
+        <summary>Il Kenya è sicuro?</summary>
+        <p>
+          Sì, il Kenya è una meta turistica sicura e accogliente. Le nostre
+          guide esperte si prenderanno cura di te.
+        </p>
+      </details>
     </div>
 
-    <footer>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4 style="color: white">Salame Safari</h4>
-          <p>La tua porta d'accesso alla savana keniota.</p>
+    <div class="booking-container" id="bookingform">
+      <div class="info-sidebar">
+        <h3>Contatti Rapidi</h3>
+        <p>Hai domande urgenti? Scrivici direttamente:</p>
+        <div class="contact-item">
+          <span>📍</span>
+          <div>watamu, Kenya</div>
         </div>
-        <div class="footer-col">
-          <h4 style="color: white">Link</h4>
-          <p>Privacy Policy<br />Termini di Servizio</p>
+        <div class="contact-item">
+          <span>📞</span>
+          <div>+254114425712</div>
         </div>
-        <div class="footer-col">
-          <h4 style="color: white">Social</h4>
-          <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
-        <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
+        <div class="contact-item">
+          <span>📧</span>
+          <div>salamesafaritours@gmail.com</div>
+        </div>
+        <div class="contact-item">
+          <span>💬</span>
+          <div>WhatsApp: +393339915462</div>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 30px; font-size: 0.8rem">
-        &copy; 2026 Salame Safari Tours. Tutti i diritti riservati.
-      </div>
-    </footer>
+      !-- WhatsApp button -->
+      <a href="https://wa.me/393339915462" class="sticky-contact" target="_blank">
+        <span>💬</span> CONTATTACI ORA
+      </a>
 
-    <!-- JS FILE -->
-    <script src="contactus.js"></script>
-  </body>
+
+      <div class="form-section">
+        <h2>Inizia l'Avventura</h2>
+        <p style="color: #777;">Compila il modulo e ricevi un preventivo gratuito.</p>
+
+        <!-- Web3Forms Integration -->
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Hidden Input -->
+          <input type="hidden" name="access_key" value="666c78f9-4021-45c1-8f64-11599e87a5aa" />
+          <input type="hidden" name="redirect" value="thankyou.html" />
+          <input type="hidden" name="subject" value="Nuova Richiesta Safari" />
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label>Nome e Cognome</label>
+              <input type="text" name="name" placeholder="Mario Rossi" required />
+            </div>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="mario@email.it" required />
+            </div>
+            <div class="input-group">
+              <label>Scegli il Pacchetto</label>
+              <select name="package" required>
+                <option value="">Seleziona...</option>
+                <option>2 Giorni Tsavo Est</option>
+                <option>2 Giorni Masai Mara</option>
+                <option>3 Giorni Tsavo Est & Ovest</option>
+                <option>Escursione Malindi</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>Data di Inizio</label>
+              <input type="date" name="date" required />
+            </div>
+            <div class="input-group">
+              <label>Persone</label>
+              <input type="number" name="people" min="1" value="2" />
+            </div>
+            <div class="input-group">
+              <label>Telefono</label>
+              <input type="tel" name="phone" placeholder="+39 ..." />
+            </div>
+            <div class="input-group full-width">
+              <label>Richieste Speciali</label>
+              <textarea name="message" rows="3" placeholder="Es. Dieta vegana, pick-up in hotel..."></textarea>
+            </div>
+            <div class="full-width">
+              <button type="submit" class="btn-submit">Invia Richiesta</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 style="color: white">Salame Safari</h4>
+        <p>La tua porta d'accesso alla savana keniota.</p>
+      </div>
+      <div class="footer-col">
+        <h4 style="color: white">Link</h4>
+        <p>Privacy Policy<br />Termini di Servizio</p>
+      </div>
+      <div class="footer-col">
+        <h4 style="color: white">Social</h4>
+        <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
+        <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px; font-size: 0.8rem">
+      &copy; 2026 Salame Safari Tours. Tutti i diritti riservati.
+    </div>
+  </footer>
+
+  <!-- JS FILE -->
+  <script src="contactus.js"></script>
+</body>
+
 </html>

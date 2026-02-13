@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salame Safari Tours | Home</title>
+  <title>Salame Safari Tours | Migliori Safari in Kenya | Maasai Mara & Amboseli</title>
+  <meta name="description"
+    content="Salame Safari Tours organizza i migliori safari in Kenya. Esperienze indimenticabili in Maasai Mara, Amboseli e Tsavo. Prenota il tuo viaggio da sogno oggi!">
+  <meta name="keywords"
+    content="Safari in Kenya, Migliori safari Kenya, Safari Kenya prezzi, Viaggi organizzati Kenya, Maasai Mara safari, Kenya Safari Tours, Luxury Safari Kenya">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- WhatsApp button -->
@@ -55,7 +61,7 @@
     <div class="container">
       <div class="about-flex">
         <div class="about-image">
-          <img src="lion.jpg" alt="Safari in Kenya" />
+          <img src="lion.jpg" alt="Leone nella savana del Kenya - Safari Experience" />
         </div>
         <div class="about-text">
           <h2>CHI SIAMO</h2>
@@ -126,7 +132,7 @@
   <section class="sectionmid" id="testimonianze">
     <div class="container" style="text-align: center">
       <h2>Dicono di Noi</h2>
-      <div class="testimonial-grid">
+      <div class="testimonial-grid" id="testimonialGrid">
         <div class="testimonial-card">
           <div class="stars">⭐⭐⭐⭐⭐</div>
           <p>
@@ -141,6 +147,23 @@
           </p>
           <span class="author">– Giovanni L., Italia</span>
         </div>
+      </div>
+
+      <!-- Rating Form -->
+      <div class="rating-form-container">
+        <h3>Lascia la tua recensione</h3>
+        <form id="ratingForm">
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+          </div>
+          <textarea id="reviewText" placeholder="Il tuo commento..." required></textarea>
+          <input type="text" id="reviewerName" placeholder="Il tuo nome" required />
+          <button type="submit" class="btn-book">Invia Recensione</button>
+        </form>
       </div>
     </div>
   </section>
@@ -211,4 +234,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
