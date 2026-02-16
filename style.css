@@ -957,23 +957,23 @@
  }
 
 
- /*gallery.html/*
-    
-    :root {
-  --orange:#ff8c00;
-  --dark:#121212;
-  --grey:#f4f4f4;
-  --white:#ffffff;
-}
+ /* gallery.html */
 
-body {
-  margin:0;
-  background-color:#fff;
-  color:#121212;
-  font-family:"Segoe UI", sans-serif;
-}
+ :root {
+   --orange: #ff8c00;
+   --dark: #121212;
+   --grey: #f4f4f4;
+   --white: #ffffff;
+ }
 
-/* NAVIGATION */
+ body {
+   margin: 0;
+   background-color: #fff;
+   color: #121212;
+   font-family: "Segoe UI", sans-serif;
+ }
+
+ /* NAVIGATION */
 
  nav {
    background: var(--white);
