@@ -1,23 +1,42 @@
 <!doctype html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grazie | Salame Safari Tours</title>
-  <link rel="stylesheet" href="thankyou.css" />
+  <title data-i18n="thank-title">Grazie | Salame Safari Tours</title>
+  <meta name="description"
+    content="Thank you for choosing Salame Safari Tours. We have received your request and will contact you shortly.">
+
+  <!-- SEO / GEO Targeting -->
+  <link rel="alternate" hreflang="it" href="https://salamesafaritours.com/thankyou.html" />
+  <link rel="alternate" hreflang="en" href="https://salamesafaritours.com/thankyou.html?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://salamesafaritours.com/thankyou.html" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="translations.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
+
 <body>
 
-  <div class="thankyou-container">
-    <h1>Grazie per aver scelto Salame Safari Tours!</h1>
-    <p>
+  <!-- Language Switcher in Head (Invisible but functional) -->
+  <div class="global-lang-switcher" style="position: absolute; top: 20px; right: 20px; z-index: 100;">
+    <button class="global-btn-lang" data-lang="it">IT</button>
+    <button class="global-btn-lang" data-lang="en">EN</button>
+  </div>
+
+  <div class="sectionmid" style="text-align: center; margin-top: 100px;">
+    <h1 data-i18n="thank-h1">Grazie per aver scelto Salame Safari Tours!</h1>
+    <p data-i18n="thank-p">
       Siamo onorati di servirti e far parte della tua avventura. <br>
       Karibu Kenya, dove le avventure sono leggende di storia esistenti nel mondo moderno, <br>
       una storia come mai prima d’ora.
     </p>
-    <button id="back-btn">Torna al Modulo</button>
+    <a href="index.html" class="btn-explore" data-i18n="thank-btn"
+      style="display: inline-block; margin-top: 30px;">Torna al Sito</a>
   </div>
 
-  <script src="thankyou.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- MOBILE NAV TOGGLE ---
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-
   // --- AUTO-FILL FORM FROM URL ---
   const params = new URLSearchParams(window.location.search);
   const packageName = params.get('package');
@@ -43,11 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Append details to the message box
     const messageBox = document.querySelector('textarea[name="message"]');
     if (messageBox) {
-      let details = `\n\n--- RIEPILOGO PRENOTAZIONE ---\nPacchetto: ${packageName}`;
+      const isEnglish = localStorage.getItem('siteLanguage') === 'en';
+      const header = isEnglish ? '--- RESERVATION SUMMARY ---' : '--- RIEPILOGO PRENOTAZIONE ---';
+      const pkgLabel = isEnglish ? 'Package' : 'Pacchetto';
+      const hotelLabel = isEnglish ? 'Selected Hotel' : 'Hotel Scelto';
+      const budgetLabel = isEnglish ? 'Budget Level' : 'Livello Budget';
+      const priceLabel = isEnglish ? 'Estimated Price' : 'Prezzo Stimato';
 
-      if (hotel && hotel !== 'N/A') details += `\nHotel Scelto: ${hotel}`;
-      if (budget && budget !== 'N/A') details += `\nLivello Budget: ${budget.charAt(0).toUpperCase() + budget.slice(1)}`;
-      if (price && price !== 'N/A') details += `\nPrezzo Stimato: ${price}`;
+      let details = `\n\n${header}\n${pkgLabel}: ${packageName}`;
+
+      if (hotel && hotel !== 'N/A') details += `\n${hotelLabel}: ${hotel}`;
+      if (budget && budget !== 'N/A') details += `\n${budgetLabel}: ${budget.charAt(0).toUpperCase() + budget.slice(1)}`;
+      if (price && price !== 'N/A') details += `\n${priceLabel}: ${price}`;
+
+      details += isEnglish ? '\n\nBooked with Salame Safari Tours' : '\n\nPrenotato con Salame Safari Tours';
 
       messageBox.value = details; // Set value
     }

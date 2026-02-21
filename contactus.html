@@ -4,13 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prenota Safari Kenya | Contatti Salame Safari Tours | Maasai Mara & Amboseli</title>
+  <title>Book Your Kenya Safari | Contact Salame Safari Tours Official</title>
   <meta name="description"
-    content="Contatta Salame Safari Tours per prenotare oggi il tuo safari in Kenya. Tour personalizzati nel Maasai Mara, Amboseli e Tsavo. Siamo a tua disposizione per creare il tuo viaggio su misura in Africa.">
+    content="Contact Salame Safari Tours to book your dream Kenya safari. Free quotes for Maasai Mara, Amboseli, and Tsavo tours. Personalized assistance available via WhatsApp and email. Start your adventure now.">
   <meta name="keywords"
-    content="Prenota Safari Kenya, Contatti Salame Safari Tours, Safari Maasai Mara, Viaggi Kenya, Safari Kenia prezzi, Salame Safari">
+    content="Book Kenya Safari, Contact Salame Safari Tours, Safari Reservation, Kenya Travel 2026, Safari prices, Salame Safari Contact, Best Safari Agency Kenya, Watamu Safari Office">
+
+  <!-- SEO / GEO Targeting -->
+  <link rel="alternate" hreflang="it" href="https://salamesafaritours.com/contactus.html" />
+  <link rel="alternate" hreflang="en" href="https://salamesafaritours.com/contactus.html?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://salamesafaritours.com/contactus.html" />
+  <meta name="geo.region" content="KE" />
+  <meta name="geo.placename" content="Watamu" />
+  <meta name="geo.position" content="-3.3522;40.0169" />
+  <meta name="ICBM" content="-3.3522, 40.0169" />
+
+  <!-- AEO / Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "TravelAgency",
+      "name": "Salame Safari Tours",
+      "telephone": "+393339915462",
+      "email": "salamesafaritours@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Watamu Beach Road",
+        "addressLocality": "Watamu",
+        "addressCountry": "KE"
+      }
+    }
+  }
+  </script>
   <!-- CSS FILE -->
   <link rel="stylesheet" href="style.css" />
+  <script src="translations.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 
 <body class="bg-elephant">
@@ -18,7 +49,7 @@
   <!-- WhatsApp button -->
   <a href="https://wa.me/393339915462?text=Benvenuti%20da%20Salame%20Safari%20Tours!%0AOffriamo%20Safari%20indimenticabili%20in%20Kenya%20(Maasai%20Mara,%20Amboseli,%20Tsavo)%20e%20servizi%20esclusivi%20(Corsi%20di%20Cucina,%20Noleggio%20Auto,%20Guide).%0AScegli%20un'opzione%20o%20chiedi%20informazioni!"
     class="sticky-contact" target="_blank">
-    <span>💬</span> CONTATTACI ORA
+    <span>💬</span> <span data-i18n="sticky-contact">CONTATTACI ORA</span>
   </a>
   <!-- Navigation -->
   <nav>
@@ -35,39 +66,43 @@
     </div>
 
     <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="package.html">Pacchetti</a>
-      <a href="service.html">Servizi</a>
-      <a href="gallery.html">Galleria</a>
-      <a href="#bookingform" class="btn-book-nav">PRENOTA ORA</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="package.html" data-i18n="nav-packages">Pacchetti</a>
+      <a href="service.html" data-i18n="nav-services">Servizi</a>
+      <a href="gallery.html" data-i18n="nav-gallery">Galleria</a>
+      <a href="#bookingform" class="btn-book-nav" data-i18n="nav-book">PRENOTA ORA</a>
+      <div class="global-lang-switcher">
+        <button class="global-btn-lang" data-lang="it">IT</button>
+        <button class="global-btn-lang" data-lang="en">EN</button>
+      </div>
     </div>
   </nav>
 
   <header class="page-hero">
-    <h1>Siamo qui per aiutarti</h1>
-    <p>Trova risposte rapide o prenota oggi stesso il tuo viaggio da sogno</p>
+    <h1 data-i18n="contact-hero-title">Siamo qui per aiutarti</h1>
+    <p data-i18n="contact-hero-desc">Trova risposte rapide o prenota oggi stesso il tuo viaggio da sogno</p>
   </header>
 
   <div class="combined-section">
     <div class="faq-card">
-      <h2>Domande Frequenti (FAQ)</h2>
+      <h2 data-i18n="faq-title">Domande Frequenti (FAQ)</h2>
       <details class="help-item">
-        <summary>Come posso prenotare un safari?</summary>
-        <p>
+        <summary data-i18n="faq-q1">Come posso prenotare un safari?</summary>
+        <p data-i18n="faq-a1">
           Usa il modulo qui sotto, scrivici su WhatsApp o inviaci un'email. Ti
           risponderemo entro 24 ore.
         </p>
       </details>
       <details class="help-item">
-        <summary>Offrite safari personalizzati?</summary>
-        <p>
+        <summary data-i18n="faq-q2">Offrite safari personalizzati?</summary>
+        <p data-i18n="faq-a2">
           Certamente! Ogni viaggio può essere adattato ai tuoi desideri,
           budget e interessi.
         </p>
       </details>
       <details class="help-item">
-        <summary>Il Kenya è sicuro?</summary>
-        <p>
+        <summary data-i18n="faq-q3">Il Kenya è sicuro?</summary>
+        <p data-i18n="faq-a3">
           Sì, il Kenya è una meta turistica sicura e accogliente. Le nostre
           guide esperte si prenderanno cura di te.
         </p>
@@ -76,7 +111,7 @@
 
     <div class="booking-container" id="bookingform">
       <div class="info-sidebar">
-        <h3>Contatti Rapidi</h3>
+        <h3 data-i18n="contact-quick">Contatti Rapidi</h3>
         <p>Hai domande urgenti? Scrivici direttamente:</p>
         <div class="contact-item">
           <span>📍</span>
@@ -102,8 +137,8 @@
 
 
       <div class="form-section">
-        <h2>Inizia l'Avventura</h2>
-        <p style="color: #777;">Compila il modulo e ricevi un preventivo gratuito.</p>
+        <h2 data-i18n="contact-form-title">Inizia l'Avventura</h2>
+        <p style="color: #777;" data-i18n="contact-form-desc">Compila il modulo e ricevi un preventivo gratuito.</p>
 
         <!-- Web3Forms Integration -->
         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
@@ -114,11 +149,11 @@
 
           <div class="form-grid">
             <div class="input-group">
-              <label>Nome e Cognome</label>
+              <label data-i18n="label-name">Nome e Cognome</label>
               <input type="text" name="name" placeholder="Mario Rossi" required />
             </div>
             <div class="input-group">
-              <label>Email</label>
+              <label data-i18n="label-email">Email</label>
               <input type="email" name="email" placeholder="mario@email.it" required />
             </div>
             <div class="input-group">
@@ -144,11 +179,11 @@
               <input type="tel" name="phone" placeholder="+39 ..." />
             </div>
             <div class="input-group full-width">
-              <label>Richieste Speciali</label>
+              <label data-i18n="label-message">Richieste Speciali</label>
               <textarea name="message" rows="3" placeholder="Es. Dieta vegana, pick-up in hotel..."></textarea>
             </div>
             <div class="full-width">
-              <button type="submit" class="btn-submit">Invia Richiesta</button>
+              <button type="submit" class="btn-submit" data-i18n="btn-submit">Invia Richiesta</button>
             </div>
           </div>
         </form>
@@ -159,23 +194,23 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Contatti</h4>
+        <h4 data-i18n="footer-contact">Contatti</h4>
         <p>Email: <a href="mailto:salamesafaritours@gmail.com">salamesafaritours@gmail.com</a></p>
         <p>Telefono Italia: +39 333 991 5462</p>
         <p>Kenya: +254114425712</p>
       </div>
       <div class="footer-col">
-        <h4>Seguici</h4>
+        <h4 data-i18n="footer-follow">Seguici</h4>
         <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
         <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
         <p><a href="https://www.tiktok.com/@salamesafaritours0" target="_blank">TikTok</a></p>
       </div>
       <div class="footer-col">
-        <h4>Salame Safari Tours</h4>
-        <p>Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
+        <h4 data-i18n="footer-about-title">Salame Safari Tours</h4>
+        <p data-i18n="footer-about-desc">Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 30px; font-size: 0.8rem">
+    <div style="text-align: center; margin-top: 30px; font-size: 0.8rem" data-i18n="footer-rights">
       &copy; 2026 Salame Safari Tours. Tutti i diritti riservati.
     </div>
   </footer>

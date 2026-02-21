@@ -4,15 +4,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servizi Safari Kenya | Noleggio Auto, Guide & Transfer | Salame Safari Tours</title>
+    <title>Kenya Safari Services | Car Hire, Expert Guides & Transfers 2026</title>
     <meta name="description"
-        content="Scopri i nostri servizi esclusivi per il tuo safari in Kenya. Offriamo noleggio auto safari, guide certificate, corsi di cucina locale e transfer privati a Malindi e Watamu. Prenota oggi con Salame Safari Tours.">
+        content="Discover premium Kenya safari services. Luxury 4x4 car hire, certified professional guides, local Swahili cooking classes, and reliable private transfers in Malindi and Watamu. Quality travel services in Kenya.">
     <meta name="keywords"
-        content="Servizi Safari Kenya, Noleggio Auto Kenya, Guide Safari, Transfer Malindi, Salame Safari Tours, Corsi Cucina Kenya">
+        content="Kenya Safari Services, Car Hire Kenya, Safari Guides, Malindi Transfers, Salame Safari Tours, Cooking Classes Kenya, Tour Guides Kenya, SGR Transfer Malindi, Watamu Taxi">
 
+    <!-- SEO / GEO Targeting -->
+    <link rel="alternate" hreflang="it" href="https://salamesafaritours.com/service.html" />
+    <link rel="alternate" hreflang="en" href="https://salamesafaritours.com/service.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://salamesafaritours.com/service.html" />
+    <meta name="geo.region" content="KE" />
+    <meta name="geo.placename" content="Watamu" />
+    <meta name="geo.position" content="-3.3522;40.0169" />
+    <meta name="ICBM" content="-3.3522, 40.0169" />
+
+    <!-- AEO / Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Safari Tours and Travel Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Salame Safari Tours"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Kenya"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Safari Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Safari Car Hire"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Professional Tour Guides"
+            }
+          }
+        ]
+      }
+    }
+    </script>
     <!-- CSS FILE -->
     <link rel="stylesheet" href="./style.css" />
-
+    <script src="translations.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +66,7 @@
     <!-- WhatsApp button -->
     <a href="https://wa.me/393339915462?text=Benvenuti%20da%20Salame%20Safari%20Tours!%0AOffriamo%20Safari%20indimenticabili%20in%20Kenya%20(Maasai%20Mara,%20Amboseli,%20Tsavo)%20e%20servizi%20esclusivi%20(Corsi%20di%20Cucina,%20Noleggio%20Auto,%20Guide).%0AScegli%20un'opzione%20o%20chiedi%20informazioni!"
         class="sticky-contact" target="_blank">
-        <span>💬</span> CONTATTACI ORA
+        <span>💬</span> <span data-i18n="sticky-contact">CONTATTACI ORA</span>
     </a>
 
     <div class="page-bg">
@@ -40,18 +86,22 @@
             </div>
 
             <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="package.html">Pacchetti</a>
-                <a href="service.html" class="active">Servizi</a>
-                <a href="gallery.html">Galleria</a>
-                <a href="contactus.html" class="btn-book-nav">PRENOTA ORA</a>
+                <a href="index.html" data-i18n="nav-home">Home</a>
+                <a href="package.html" data-i18n="nav-packages">Pacchetti</a>
+                <a href="service.html" class="active" data-i18n="nav-services">Servizi</a>
+                <a href="gallery.html" data-i18n="nav-gallery">Galleria</a>
+                <a href="contactus.html" class="btn-book-nav" data-i18n="nav-book">PRENOTA ORA</a>
+                <div class="global-lang-switcher">
+                    <button class="global-btn-lang" data-lang="it">IT</button>
+                    <button class="global-btn-lang" data-lang="en">EN</button>
+                </div>
             </div>
         </nav>
 
         <!-- HERO -->
         <header class="page-hero">
-            <h1>I Nostri Servizi</h1>
-            <p>Esperienze create su misura per garantirti comfort, cultura e avventura</p>
+            <h1 data-i18n="service-hero-title">I Nostri Servizi</h1>
+            <p data-i18n="service-hero-desc">Esperienze create su misura per garantirti comfort, cultura e avventura</p>
         </header>
 
         <!-- SERVICES -->
@@ -63,10 +113,11 @@
                     <div class="service-img">
                         <img src="pictures/cooking/cooking 2.jpg" alt="Lezioni di Cucina" />
                     </div>
-                    <h2>Corsi di Cucina</h2>
-                    <p>Scopri l'autentica cucina keniota attraverso sessioni pratiche guidate da chef locali.</p>
-                    <a href="https://wa.me/393339915462?text=Vorrei%20prenotare%20una%20lezione%20di%20cucina"
-                        class="btn-book-service" target="_blank">Prenota su WhatsApp</a>
+                    <h2 data-i18n="service-cooking-title">Corsi di Cucina</h2>
+                    <p data-i18n="service-cooking-desc">Scopri l'autentica cucina keniota attraverso sessioni pratiche
+                        guidate da chef locali.</p>
+                    <a href="https://wa.me/393339915462?text=Ciao%20Salame%20Safari%20Tours!%20Vorrei%20prenotare%20una%20lezione%20di%20cucina.%20Ho%20bisogno%20di%20specificare%20cosa%20mi%20serve%20e%20vorrei%20maggiori%20dettagli%20sull'esperienza."
+                        class="btn-book-service" target="_blank" data-i18n="service-wa-btn">Prenota su WhatsApp</a>
                 </div>
 
                 <div class="service-card">
@@ -127,23 +178,24 @@
         <footer>
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Contatti</h4>
+                    <h4 data-i18n="footer-contact">Contatti</h4>
                     <p>Email: <a href="mailto:salamesafaritours@gmail.com">salamesafaritours@gmail.com</a></p>
                     <p>Telefono Italia: +39 333 991 5462</p>
                     <p>Kenya: +254114425712</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Seguici</h4>
+                    <h4 data-i18n="footer-follow">Seguici</h4>
                     <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
                     <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
                     <p><a href="https://www.tiktok.com/@salamesafaritours0" target="_blank">TikTok</a></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Salame Safari Tours</h4>
-                    <p>Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
+                    <h4 data-i18n="footer-about-title">Salame Safari Tours</h4>
+                    <p data-i18n="footer-about-desc">Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
                 </div>
             </div>
-            <p style="text-align:center; margin-top:20px;">&copy; 2026 Salame Safari Tours. Tutti i diritti riservati.
+            <p style="text-align:center; margin-top:20px;" data-i18n="footer-rights">&copy; 2026 Salame Safari Tours.
+                Tutti i diritti riservati.
             </p>
         </footer>
 

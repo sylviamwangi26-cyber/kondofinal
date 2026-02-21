@@ -4,12 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salame Safari Tours | Safari in Kenya | Maasai Mara, Amboseli, Tsavo</title>
+  <title>Salame Safari Tours | Best Kenya Safaris | Maasai Mara, Amboseli, Tsavo</title>
   <meta name="description"
-    content="Benvenuti da Salame Safari Tours! Offriamo safari indimenticabili in Kenya: Maasai Mara, Amboseli e Tsavo. Scopri i nostri pacchetti vacanze e servizi di noleggio auto e guide esperte. Prenota il tuo viaggio in Africa oggi!">
+    content="Book the best Kenya safari tours with Salame Safari Tours. Expert-led adventures in Maasai Mara, Amboseli, Tsavo, and Watamu. Tailor-made packages for global travelers. Professional guides and luxury service.">
   <meta name="keywords"
-    content="Safari Kenya, Safari Maasai Mara, Safari Amboseli, Viaggi Kenya, Salame Safari Tours, Safari Kenia prezzi, Migliori Safari Africa">
+    content="Kenya Safari, Maasai Mara Safari, Amboseli Tours, Tsavo East Kenya, Salame Safari Tours, Kenya Safari Packages, Safari prices Kenya, Best Africa Safaris, Watamu Snorkeling, Malindi Tours, Kenya Travel 2026">
+
+  <!-- SEO / GEO Targeting -->
+  <link rel="alternate" hreflang="it" href="https://salamesafaritours.com/index.html" />
+  <link rel="alternate" hreflang="en" href="https://salamesafaritours.com/index.html?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://salamesafaritours.com/index.html" />
+  <meta name="geo.region" content="KE" />
+  <meta name="geo.placename" content="Watamu" />
+  <meta name="geo.position" content="-3.3522;40.0169" />
+  <meta name="ICBM" content="-3.3522, 40.0169" />
+
+  <!-- AEO / Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Salame Safari Tours",
+    "image": "https://salamesafaritours.com/logo.png",
+    "@id": "https://salamesafaritours.com",
+    "url": "https://salamesafaritours.com",
+    "telephone": "+393339915462",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Watamu Beach Road",
+      "addressLocality": "Watamu",
+      "addressRegion": "Coast",
+      "postalCode": "80202",
+      "addressCountry": "KE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -3.3522,
+      "longitude": 40.0169
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61587037484321",
+      "https://www.instagram.com/salame_safari_tours/",
+      "https://www.tiktok.com/@salamesafaritours0"
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
+  <script src="translations.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +73,7 @@
   <!-- WhatsApp button -->
   <a href="https://wa.me/393339915462?text=Benvenuti%20da%20Salame%20Safari%20Tours!%20Offriamo%20Safari%20indimenticabili%20in%20Kenya%20(Maasai%20Mara,%20Amboseli,%20Tsavo)%20e%20servizi%20esclusivi%20(Corsi%20di%20Cucina,%20Noleggio%20Auto,%20Guide).%20Scegli%20un'opzione%20o%20chiedi%20informazioni!"
     class="sticky-contact" target="_blank">
-    <span>💬</span> CONTATTACI ORA
+    <span>💬</span> <span data-i18n="sticky-contact">CONTATTACI ORA</span>
   </a>
 
   <!-- Navigation -->
@@ -35,11 +91,15 @@
     </div>
 
     <div class="nav-links" id="navLinks">
-      <a href="index.html" class="active">Home</a>
-      <a href="package.html">Pacchetti</a>
-      <a href="service.html">Servizi</a>
-      <a href="gallery.html">Galleria</a>
-      <a href="contactus.html" class="btn-book-nav">PRENOTA ORA</a>
+      <a href="index.html" class="active" data-i18n="nav-home">Home</a>
+      <a href="package.html" data-i18n="nav-packages">Pacchetti</a>
+      <a href="service.html" data-i18n="nav-services">Servizi</a>
+      <a href="gallery.html" data-i18n="nav-gallery">Galleria</a>
+      <a href="contactus.html" class="btn-book-nav" data-i18n="nav-book">PRENOTA ORA</a>
+      <div class="global-lang-switcher">
+        <button class="global-btn-lang" data-lang="it">IT</button>
+        <button class="global-btn-lang" data-lang="en">EN</button>
+      </div>
     </div>
   </nav>
 
@@ -51,9 +111,9 @@
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>SALAME SAFARI TOURS</h1>
-      <p>Un'Avventura Oltre Ogni Immaginazione nel Cuore del Kenya</p>
-      <a href="package.html" class="btn-explore">Esplora i Pacchetti</a>
+      <h1 data-i18n="hero-title">SALAME SAFARI TOURS</h1>
+      <p data-i18n="hero-subtitle">Un'Avventura Oltre Ogni Immaginazione nel Cuore del Kenya</p>
+      <a href="package.html" class="btn-explore" data-i18n="hero-btn">Esplora i Pacchetti</a>
     </div>
   </header>
 
@@ -65,24 +125,24 @@
           <img src="lion.jpg" alt="Leone nella savana del Kenya - Safari Experience" />
         </div>
         <div class="about-text">
-          <h2>CHI SIAMO</h2>
-          <h3 style="color: var(--orange); margin-bottom: 20px">
+          <h2 data-i18n="about-title">CHI SIAMO</h2>
+          <h3 style="color: var(--orange); margin-bottom: 20px" data-i18n="about-subtitle">
             I Vostri Compagni nel Cuore Selvaggio dell'Africa
           </h3>
-          <p>
+          <p data-i18n="about-p1">
             Il Kenya è molto più del nostro luogo di lavoro: è la nostra casa,
             il nostro cuore e la nostra eredità. Noi di
             <strong>Salame Safari Tours</strong> crediamo che un safari non
             debba essere solo una lista di animali da avvistare; deve essere
             un momento in cui il tempo si ferma.
           </p>
-          <p>
+          <p data-i18n="about-p2">
             Siamo nati da un sogno semplice: condividere con il mondo la
             bellezza cruda e incontaminata del nostro "giardino di casa".
             Quando viaggiate con noi, non siete solo una prenotazione. Siete
             ospiti della nostra terra.
           </p>
-          <p>
+          <p data-i18n="about-p3">
             Dalla polvere dorata di Amboseli alle leggendarie pianure del
             Mara, vi portiamo nel profondo della savana, condividendo storie e
             rivelando angoli segreti conosciuti solo da chi vive qui. Siamo un
@@ -99,28 +159,28 @@
   <!-- Why Us Section -->
   <section id="perche-sceglierci" class="sectionmid">
     <div class="container" style="text-align: center">
-      <h2 style="margin-bottom: 40px">Perché Scegliere Salame?</h2>
+      <h2 style="margin-bottom: 40px" data-i18n="why-title">Perché Scegliere Salame?</h2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="icon">🧭</div>
-          <h4>Passione, Non Routine</h4>
-          <p>
+          <h4 data-i18n="why-1-title">Passione, Non Routine</h4>
+          <p data-i18n="why-1-desc">
             Non crediamo nei pacchetti "standard". Ogni viaggio è creato su
             misura per essere la vostra avventura unica.
           </p>
         </div>
         <div class="feature-card">
           <div class="icon">🌿</div>
-          <h4>Radici Profonde</h4>
-          <p>
+          <h4 data-i18n="why-2-title">Radici Profonde</h4>
+          <p data-i18n="why-2-desc">
             Le nostre guide fanno parte della nostra famiglia. Non si limitano
             a trovare la fauna; interpretano il ritmo della terra.
           </p>
         </div>
         <div class="feature-card">
           <div class="icon">🌍</div>
-          <h4>Viaggiare con Scopo</h4>
-          <p>
+          <h4 data-i18n="why-3-title">Viaggiare con Scopo</h4>
+          <p data-i18n="why-3-desc">
             Proteggiamo ciò che amiamo. Ogni safari sostiene le comunità
             locali e gli spazi selvaggi del Kenya magico.
           </p>
@@ -152,7 +212,7 @@
 
       <!-- Rating Form -->
       <div class="rating-form-container">
-        <h3>Lascia la tua recensione</h3>
+        <h3 data-i18n="test-form-title">Lascia la tua recensione</h3>
         <form id="ratingForm">
           <div class="star-rating">
             <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
@@ -161,9 +221,10 @@
             <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
             <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
           </div>
-          <textarea id="reviewText" placeholder="Il tuo commento..." required></textarea>
-          <input type="text" id="reviewerName" placeholder="Il tuo nome" required />
-          <button type="submit" class="btn-book">Invia Recensione</button>
+          <textarea id="reviewText" data-i18n="test-form-placeholder" placeholder="Il tuo commento..."
+            required></textarea>
+          <input type="text" id="reviewerName" data-i18n="test-form-name" placeholder="Il tuo nome" required />
+          <button type="submit" class="btn-book" data-i18n="test-form-btn">Invia Recensione</button>
         </form>
       </div>
     </div>
@@ -194,23 +255,24 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Contatti</h4>
+        <h4 data-i18n="footer-contact">Contatti</h4>
         <p>Email: <a href="mailto:salamesafaritours@gmail.com">salamesafaritours@gmail.com</a></p>
         <p>Telefono Italia: +39 333 991 5462</p>
         <p>Kenya: +254114425712</p>
       </div>
       <div class="footer-col">
-        <h4>Seguici</h4>
+        <h4 data-i18n="footer-follow">Seguici</h4>
         <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
         <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
         <p><a href="https://www.tiktok.com/@salamesafaritours0" target="_blank">TikTok</a></p>
       </div>
       <div class="footer-col">
-        <h4>Salame Safari Tours</h4>
-        <p>Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
+        <h4 data-i18n="footer-about-title">Salame Safari Tours</h4>
+        <p data-i18n="footer-about-desc">Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
       </div>
     </div>
-    <p style="text-align:center; margin-top:20px;">&copy; 2026 Salame Safari Tours. Tutti i diritti riservati.</p>
+    <p style="text-align:center; margin-top:20px;" data-i18n="footer-rights">&copy; 2026 Salame Safari Tours. Tutti i
+      diritti riservati.</p>
   </footer>
 
   <!-- Mobile bottom nav -->

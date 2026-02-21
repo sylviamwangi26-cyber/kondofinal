@@ -6,15 +6,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Galleria Safari Kenya | Foto Tour Maasai Mara & Amboseli | Salame Safari Tours</title>
+    <title>Kenya Safari Photo Gallery | Professional Tour Images 2026</title>
     <meta name="description"
-        content="Guarda le foto dei nostri safari in Kenya. Immagini spettacolari del Maasai Mara, Amboseli e della costa keniota. Vivi l'emozione del tour africano con Salame Safari Tours.">
+        content="Explore the breathtaking beauty of Kenya in our photo gallery. Spectacular images of Maasai Mara wildlife, Amboseli elephants, Tsavo lions, and Watamu beaches. Experience Africa with Salame Safari Tours.">
     <meta name="keywords"
-        content="Foto Safari Kenya, Galleria Immagini Kenya, Maasai Mara Foto, Amboseli Safari, Salame Safari Tours, Paesaggi Kenya">
+        content="Kenya Safari Photos, Kenya Image Gallery, Maasai Mara Wildlife, Amboseli Safari, Salame Safari Tours Gallery, Kenya Landscapes, Safari Photography, Watamu Beach Photos, Wildlife Images Africa">
 
+    <!-- SEO / GEO Targeting -->
+    <link rel="alternate" hreflang="it" href="https://salamesafaritours.com/gallery.html" />
+    <link rel="alternate" hreflang="en" href="https://salamesafaritours.com/gallery.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://salamesafaritours.com/gallery.html" />
+    <meta name="geo.region" content="KE" />
+    <meta name="geo.placename" content="Watamu" />
+    <meta name="geo.position" content="-3.3522;40.0169" />
+    <meta name="ICBM" content="-3.3522, 40.0169" />
+
+    <!-- AEO / Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Kenya Safari Moments",
+      "description": "A collection of wildlife and landscape photography from Kenya's most iconic national parks.",
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Salame Safari Tours"
+      }
+    }
+    </script>
     <!-- CSS FILE -->
     <link rel="stylesheet" href="style.css" />
-
+    <script src="translations.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +45,7 @@
     <!-- WhatsApp button -->
     <a href="https://wa.me/393339915462?text=Benvenuti%20da%20Salame%20Safari%20Tours!%0AOffriamo%20Safari%20indimenticabili%20in%20Kenya%20(Maasai%20Mara,%20Amboseli,%20Tsavo)%20e%20servizi%20esclusivi%20(Corsi%20di%20Cucina,%20Noleggio%20Auto,%20Guide).%0AScegli%20un'opzione%20o%20chiedi%20informazioni!"
         class="sticky-contact" target="_blank">
-        <span>💬</span> CONTATTACI ORA
+        <span>💬</span> <span data-i18n="sticky-contact">CONTATTACI ORA</span>
     </a>
     <!-- NAVIGATION -->
     <nav>
@@ -39,17 +62,21 @@
         </div>
 
         <div class="nav-links" id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="package.html">Pacchetti</a>
-            <a href="service.html">Servizi</a>
-            <a href="gallery.html" class="active">Galleria</a>
-            <a href="contactus.html" class="btn-book-nav">PRENOTA ORA</a>
+            <a href="index.html" data-i18n="nav-home">Home</a>
+            <a href="package.html" data-i18n="nav-packages">Pacchetti</a>
+            <a href="service.html" data-i18n="nav-services">Servizi</a>
+            <a href="gallery.html" class="active" data-i18n="nav-gallery">Galleria</a>
+            <a href="contactus.html" class="btn-book-nav" data-i18n="nav-book">PRENOTA ORA</a>
+            <div class="global-lang-switcher">
+                <button class="global-btn-lang" data-lang="it">IT</button>
+                <button class="global-btn-lang" data-lang="en">EN</button>
+            </div>
         </div>
     </nav>
 
     <header class="gallery-header">
-        <h1>MOMENTI SAFARI</h1>
-        <p>Attraverso l'obiettivo dei nostri ospiti e delle nostre guide.</p>
+        <h1 data-i18n="gallery-title">MOMENTI SAFARI</h1>
+        <p data-i18n="gallery-subtitle">Attraverso l'obiettivo dei nostri ospiti e delle nostre guide.</p>
     </header>
 
     <div class="gallery-container">
@@ -340,23 +367,24 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Contatti</h4>
+                <h4 data-i18n="footer-contact">Contatti</h4>
                 <p>Email: <a href="mailto:salamesafaritours@gmail.com">salamesafaritours@gmail.com</a></p>
                 <p>Telefono Italia: +39 333 991 5462</p>
                 <p>Kenya: +254114425712</p>
             </div>
             <div class="footer-col">
-                <h4>Seguici</h4>
+                <h4 data-i18n="footer-follow">Seguici</h4>
                 <p><a href="https://www.facebook.com/profile.php?id=61587037484321" target="_blank">Facebook</a></p>
                 <p><a href="https://www.instagram.com/salame_safari_tours/" target="_blank">Instagram</a></p>
                 <p><a href="https://www.tiktok.com/@salamesafaritours0" target="_blank">TikTok</a></p>
             </div>
             <div class="footer-col">
-                <h4>Salame Safari Tours</h4>
-                <p>Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
+                <h4 data-i18n="footer-about-title">Salame Safari Tours</h4>
+                <p data-i18n="footer-about-desc">Esplora il Kenya con noi. Avventure uniche e servizi di lusso.</p>
             </div>
         </div>
-        <p style="text-align:center; margin-top:20px;">&copy; 2026 Salame Safari Tours. Tutti i diritti riservati.</p>
+        <p style="text-align:center; margin-top:20px;" data-i18n="footer-rights">&copy; 2026 Salame Safari Tours. Tutti
+            i diritti riservati.</p>
     </footer>
 
     <!-- Mobile bottom nav -->
